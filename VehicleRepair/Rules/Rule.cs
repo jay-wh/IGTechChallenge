@@ -1,8 +1,9 @@
 ﻿using VehicleRepair.Models;
+using VehicleRepair.Rules.Interfaces;
 
 namespace VehicleRepair.Rules
 {
-    public abstract class Rule
+    public abstract class Rule : IRule
     {
         public OrderStatus OrderStatus { get; }
 
